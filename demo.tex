@@ -1,0 +1,117 @@
+\documentclass{beamer}
+
+\usetheme{simple}
+
+\usepackage{lmodern}
+\usepackage[scale=2]{ccicons}
+
+% TODO: 
+%   position adjustement
+%   change colours
+%       
+
+% Watermark background (simple theme)
+
+\setwatermark{\includegraphics[height=8cm]{img/Heckert_GNU_white.png}}
+
+
+\title{A simple beamer theme}
+\subtitle{}
+\date{\today}
+\author{Facundo Mu\~noz}
+\institute{\url{http://github.com/famuvie}}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{simple}
+  \framesubtitle{A beamer theme}
+
+  \texttt{simple} is a minimalist Beamer theme that features
+
+  \begin{columns}
+    \column{.5\textwidth}
+      \begin{itemize}
+        \item a \alert{watermark} logo in the background
+        \item slide \alert{numbers}
+        \item \emph{emph}asized and \alert{alert}ed text
+      \end{itemize}
+
+    \column{.5\textwidth}
+      \begin{block}{And of course...}
+         blocks, columns, and all Beamer power
+      \end{block}
+  \end{columns}
+  
+\end{frame}
+
+
+
+\setwatermark{\fontsize{125pt}{125pt}\selectfont{Simple}}
+
+\begin{frame}[fragile]{watermark}
+  \framesubtitle{not only for images}
+
+  \begin{itemize}
+    \item You can place \emph{any} \LaTeX{} \alert{contents} as a watermark
+  \end{itemize}
+
+  \begin{block}{In preamble}
+    \begin{verbatim}
+     \setwatermark{\includegraphics[height=8cm]{%
+                   img/Heckert_GNU_white.png}}
+    \end{verbatim}
+  \end{block}
+
+  \begin{block}{Just before this frame}
+    \begin{verbatim}
+     \setwatermark{\fontsize{125pt}{125pt}%
+                   \selectfont{Simple}}
+    \end{verbatim}
+  \end{block}
+
+
+\end{frame}
+
+
+
+\setwatermark[hoffset=-3cm,voffset=-2cm]{\fontsize{125pt}{125pt}\selectfont{Simple}}
+
+
+\begin{frame}{Options}
+  \framesubtitle{Fine adjustement of the watermark position}
+
+  
+  \begin{itemize}
+    \item \texttt{hoffset}
+    \item \texttt{voffset}
+  \end{itemize}
+  
+  They admit any \emph{positive} or \emph{negative} spacing \alert{unit}
+  
+  Note that some \alert{warnings} about \emph{badboxes} might be generated at compilation
+
+\end{frame}
+
+
+
+
+\begin{frame}{License}
+
+  \begin{block}{Get the source of this theme and the demo presentation from}
+
+  \begin{center}\url{http://github.com/famuvie/beamerthemesimple}\end{center}
+
+  \end{block}
+  
+  The theme \emph{itself} is licensed under a
+  \href{http://creativecommons.org/licenses/by-sa/4.0/}{Creative Commons
+  Attribution-ShareAlike 4.0 International License}.
+
+  \begin{center}\ccbysa\end{center}
+
+\end{frame}
+
+\end{document}
+
