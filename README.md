@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/4357/famuvie/beamerthemesimple.svg)](https://zenodo.org/badge/latestdoi/4357/famuvie/beamerthemesimple)
+
 # beamerthemesimple
 
 A minimalist Beamer theme with a watermark in the background
